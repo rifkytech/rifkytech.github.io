@@ -224,10 +224,10 @@
         
 <p>
     <span id="busuanzi_container_site_uv" style='display:none'>
-        站点总访客数：<span id="busuanzi_value_site_uv"></span>
+        Pengunjung Situs：<span id="busuanzi_value_site_uv"></span>
     </span>
     <span id="busuanzi_container_site_pv" style='display:none'>
-        站点总访问量：<span id="busuanzi_value_site_pv"></span>
+        Lalu Lintas：<span id="busuanzi_value_site_pv"></span>
     </span>
 </p>
 
@@ -341,10 +341,10 @@ var BLOG = { ROOT: '/', SHARE: true, REWARD: false };
     var OriginTitile = document.title, titleTime;
     document.addEventListener('visibilitychange', function() {
         if (document.hidden) {
-            document.title = '死鬼去哪里了！';
+            document.title = 'Jangan Pergi！';
             clearTimeout(titleTime);
         } else {
-            document.title = '(つェ⊂)咦!又好了!';
+            document.title = 'Bagus!';
             titleTime = setTimeout(function() {
                 document.title = OriginTitile;
             },2000);
