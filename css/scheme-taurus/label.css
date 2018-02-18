@@ -1,0 +1,126 @@
+.tags {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.tags label {
+  padding: 2px;
+  font-size: 0.8em;
+  margin: 3px;
+  border-radius: 5px;
+  display: block;
+}
+.tags label a {
+  color: #666;
+}
+.tag-1 {
+  border: 2px solid #b6d957;
+  background: #f0f7dd;
+}
+.tag-1:hover {
+  background: #b6d957;
+}
+.tag-1:hover a {
+  color: #fff;
+}
+.tag-2 {
+  border: 2px solid #fac364;
+  background: #fef3e0;
+}
+.tag-2:hover {
+  background: #fac364;
+}
+.tag-2:hover a {
+  color: #fff;
+}
+.tag-3 {
+  border: 2px solid #8cd3ff;
+  background: #e8f6ff;
+}
+.tag-3:hover {
+  background: #8cd3ff;
+}
+.tag-3:hover a {
+  color: #fff;
+}
+.tag-4 {
+  border: 2px solid #d998cb;
+  background: #f7eaf5;
+}
+.tag-4:hover {
+  background: #d998cb;
+}
+.tag-4:hover a {
+  color: #fff;
+}
+.tag-5 {
+  border: 2px solid #f2d249;
+  background: #fcf6db;
+}
+.tag-5:hover {
+  background: #f2d249;
+}
+.tag-5:hover a {
+  color: #fff;
+}
+.tag-6 {
+  border: 2px solid #93b9c6;
+  background: #e9f1f4;
+}
+.tag-6:hover {
+  background: #93b9c6;
+}
+.tag-6:hover a {
+  color: #fff;
+}
+.tag-7 {
+  border: 2px solid #ccc5a8;
+  background: #f5f3ee;
+}
+.tag-7:hover {
+  background: #ccc5a8;
+}
+.tag-7:hover a {
+  color: #fff;
+}
+.tag-8 {
+  border: 2px solid #52bacc;
+  background: #dcf1f5;
+}
+.tag-8:hover {
+  background: #52bacc;
+}
+.tag-8:hover a {
+  color: #fff;
+}
+.tag-9 {
+  border: 2px solid #dbdb46;
+  background: #f8f8da;
+}
+.tag-9:hover {
+  background: #dbdb46;
+}
+.tag-9:hover a {
+  color: #fff;
+}
+.tag-10 {
+  border: 2px solid #98aafb;
+  background: #eaeefe;
+}
+.tag-10:hover {
+  background: #98aafb;
+}
+.tag-10:hover a {
+  color: #fff;
+}
+.tag-11 {
+  border: 2px solid;
+  background: ;
+}
+.tag-11:hover {
+  background: ;
+}
+.tag-11:hover a {
+  color: #fff;
+}
