@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+
+    
+
+    
+
+
+
+    <meta charset="utf-8">
+    
+    
+    
+    <title>Perbedaan VPS, KVM, OpenVz | Muhammad Rifky Abimayu | Learn, &amp; Try!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#088ae0">
+    
+    
+    <meta name="keywords" content="Informasi">
+    <meta name="description" content="Perbedaan VPS XEN, KVM dan OPENVZCould server mengadobsi teknologi yang disebut dengan virtualizationSuatu teknik dimana server fisik [ disebut juga node ] dibagi menjadi beberapaVirtual private serve">
+<meta name="keywords" content="Informasi">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Perbedaan VPS, KVM, OpenVz">
+<meta property="og:url" content="http://rifkytech.github.io/perbedaan-vps-kvm-xen-openvz/index.html">
+<meta property="og:site_name" content="Muhammad Rifky Abimayu">
+<meta property="og:description" content="Perbedaan VPS XEN, KVM dan OPENVZCould server mengadobsi teknologi yang disebut dengan virtualizationSuatu teknik dimana server fisik [ disebut juga node ] dibagi menjadi beberapaVirtual private serve">
+<meta property="og:locale" content="en_US">
+<meta property="og:updated_time" content="2018-02-19T13:58:40.793Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Perbedaan VPS, KVM, OpenVz">
+<meta name="twitter:description" content="Perbedaan VPS XEN, KVM dan OPENVZCould server mengadobsi teknologi yang disebut dengan virtualizationSuatu teknik dimana server fisik [ disebut juga node ] dibagi menjadi beberapaVirtual private serve">
+    
+    <link rel="shortcut icon" href="https://www.mexious.net/favicon.ico">
+    <link rel="stylesheet" href="//unpkg.com/hexo-theme-material-indigo@latest/css/style.css">
+    <script>window.lazyScripts=[]</script>
+
+    <!-- custom head -->
+    
+
+</head>
+
+<body>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide" >
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap" style="background-image:url(/img/background.png)">
+      <div class="brand">
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="https://avatars2.githubusercontent.com/u/29800086?s=400&v=4">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">Muhammad Rifky Abimayu</h5>
+          <a href="mailto:saya@rifky.tech" title="saya@rifky.tech" class="mail">saya@rifky.tech</a>
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="waves-block waves-effect">
+              <a href="/"  >
+                <i class="icon icon-lg icon-home"></i>
+                Home
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/archives"  >
+                <i class="icon icon-lg icon-archives"></i>
+                Archives
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/tags/Tutorial"  >
+                <i class="icon icon-lg icon-tags"></i>
+                Tags
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/categories/Tutorial"  >
+                <i class="icon icon-lg icon-th-list"></i>
+                Categories
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://github.com/rifkytech" target="_blank" >
+                <i class="icon icon-lg icon-github"></i>
+                Github
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://www.mexious.net"  >
+                <i class="icon icon-lg icon-link"></i>
+                Mexious Media
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">Perbedaan VPS, KVM, OpenVz</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="Search">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+    </div>
+</header>
+<header class="content-header post-header">
+
+    <div class="container fade-scale">
+        <h1 class="title">Perbedaan VPS, KVM, OpenVz</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2018-02-19T13:32:29.258Z" itemprop="datePublished" class="page-time">
+  2018-02-19
+</time>
+
+
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Informasi/">Informasi</a></li></ul>
+
+            
+        </h5>
+    </div>
+
+    
+
+
+</header>
+
+
+<div class="container body-wrap">
+    
+    <aside class="post-widget">
+        <nav class="post-toc-wrap post-toc-shrink" id="post-toc">
+            <h4>Topic List</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Perbedaan-VPS-XEN-KVM-dan-OPENVZ"><span class="post-toc-number">1.</span> <span class="post-toc-text">Perbedaan VPS XEN, KVM dan OPENVZ</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#VPS-Xen"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">VPS Xen</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#VPS-Kvm"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">VPS Kvm</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#VPS-OpenVZ"><span class="post-toc-number">1.3.</span> <span class="post-toc-text">VPS OpenVZ</span></a></li></ol></li></ol>
+        </nav>
+    </aside>
+
+
+<article id="post-perbedaan-vps-kvm-xen-openvz"
+  class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">Perbedaan VPS, KVM, OpenVz</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2018-02-19 20:32:29" datetime="2018-02-19T13:32:29.258Z"  itemprop="datePublished">2018-02-19</time>
+
+            
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Informasi/">Informasi</a></li></ul>
+
+
+
+            
+<span id="busuanzi_container_page_pv" title="文章总阅读量" style='display:none'>
+    <i class="icon icon-eye icon-pr"></i><span id="busuanzi_value_page_pv"></span>
+</span>
+
+
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <h2 id="Perbedaan-VPS-XEN-KVM-dan-OPENVZ"><a href="#Perbedaan-VPS-XEN-KVM-dan-OPENVZ" class="headerlink" title="Perbedaan VPS XEN, KVM dan OPENVZ"></a>Perbedaan VPS XEN, KVM dan OPENVZ</h2><p>Could server mengadobsi teknologi yang disebut dengan virtualization<br>Suatu teknik dimana server fisik [ disebut juga node ] dibagi menjadi beberapa<br>Virtual private server (VPS) ,</p>
+<p>Yang membuat servermu tampak seperti menjalankan site yang beroperasi<br>Pada deticated server. Ada 3 tipe utama dari virtualisasi yg digunakan provider<br>Hosting pada umumnya saat ini yaitu XEN, KVM &amp; OpenVZ berikut perbedaanya</p>
+<h3 id="VPS-Xen"><a href="#VPS-Xen" class="headerlink" title="VPS Xen"></a>VPS Xen</h3><p>Xen merupakan metal hypervisor, yang membuatnya mampu untuk menjalankan beberapa instances dari  virtual machine dalam single host. Host tersebut tidak dibatasi oleh kernel dari host dan oleh karena itu , tidak perlu untuk menjalankan Linux di VPS.<br>Xen Virtualization mampu untuk menjalankan hosting Windows and BSD operating systems secara lancer seperti halnya juga dengan Linux guest, dan juga  Xen itu merupakan hypervisor yang sangat ringan dnegan  foot print yang kecil. Hal tersebut menjadikan resources yang bernilai sesuai dengan kebutuhan kamu. Benefit lainnya dari sudut pandang pelanggan adalah  Xen tidak dapat over-subscribed. Setiap guest’s resources di alokasikan setiap saat di  host node. Tanpa sharing memory  Xen supportsHardware Virtual Machine (HVM) &amp; Paravirtualization (PV) di hypervisor.</p>
+<p>Kelebihan Xen</p>
+<ol>
+<li>Kebanyakan orang memilih Xen untuk performa bagus dengan stabilitas luar biasa.</li>
+<li><p>Host Xen biasanya akan mengalokasikan RAM dan Core CPU ke hypervisor xen sehingga ia memiliki sumber daya khusus tersendiri yang tidak dapat dipengaruhinya untuk mencapai stabilitas.</p>
+</li>
+<li><p>Xen hadir dalam 2 rasa namun bisa berjalan bersamaan di host fisik yang sama</p>
+</li>
+<li><p>Mendukung instalasi dari ISO dan juga instalasi berbasis template, namun dilengkapi dengan pemisahan yang baik dalam hal privasi</p>
+</li>
+<li><p>Kebanyakan orang memilih KVM untuk performa dan fleksibilitas yang bagus</p>
+</li>
+<li>OpenVZ juga dapat disarangkan di dalam Xen atau KVM</li>
+<li>Dapat mencapai kepadatan yang lebih besar lagi</li>
+<li>Karena volume kontainer  dapat berjalan di satu node host sehingga harga OpenVZ lebih kompetitif daripada KVM dan Xen</li>
+<li>OpenVZ sangat populer di industri hosting karena penyebarannya yang cepat dan kepadatannya sangat tinggi</li>
+<li>Kernel host dibagi dengan para tamu beserta RAM, CPU dan disk, dengan pemisahan yang cukup mendasar antara tamu dan host I/O, kemacetan hampir tidak ada</li>
+</ol>
+<p>Kekurangan Xen</p>
+<ol>
+<li>Anda hanya bisa menjalankan Linux di Xen PV</li>
+</ol>
+<h3 id="VPS-Kvm"><a href="#VPS-Kvm" class="headerlink" title="VPS Kvm"></a>VPS Kvm</h3><p>KVM (Kernel-based Virtual Machine) merupakan solusi untuk full virtualization pada Linux berisikan virtualization extensions (Intel VT ataus AMD-V). Menggunakan KVM, dapat menggunaan Linux dan Windows virtual machine berjalan secara bersamaan pada hardware yang sama.<br>Setiap virtual machine memiliki private virtualized hardware: kernel sendiri ,a network card, disk, graphics adapter, dll. Dikarenakan memiliki virtualized hardware sendiri,virtual server akan bertindak secara mandiri.Dikarena kan KVM menjaga instances terpisah untuk setiap virtual server, KVM menggunakan resources lebih banyak secara signifikan daripada OpenVZ.<br>Kelebihan KVM</p>
+<ol>
+<li>Virtual Machine (VM) berjalan sebagai proses pada node host sementara ini bagus untuk menemukan tamu mana yang menyebabkan masalah saat diminta<br>Kekurangan  KVM</li>
+<li>Setiap tamu (VM) berjalan sebagai proses pada node host hal itu dapat menyebabkan masalah jika host berada di bawah beban berat yang dialami semua tamu</li>
+</ol>
+<h3 id="VPS-OpenVZ"><a href="#VPS-OpenVZ" class="headerlink" title="VPS OpenVZ"></a>VPS OpenVZ</h3><p>OpenVZ virtualization untuk Linux  berbasis container. OS level virtualization berarti banyak komponen dasar ada sekali di dalam mesin, dan dapat digunakan oleh seluruh  guest (seperti  identical kernel). Artinya bahwa setiap container membagikan OS yang sama  tetapi masih mengoperasikan Linux container yang terisolir. Setiap container  perform dan executes persis layaknya stand-alone server; sebuah container dapat di reboot secara mandiri dan memiliki root access, users, IP address, memory, processes, files, applications, system libraries dan configuration files. Dengan begitu anda dapat menggunakan resources lebih efisien tetapi pada saat yang sama  Lebih effisienwalau tidak dapat menjalankan OS yang berbeda di saat yang sama (Linux &amp; Windows).</p>
+<p>The cons tidak mudah untuk di migrasi ke platform yang lainnya satu-satunya  kernel modules yang tersedia adalah yang terisi di host dan jika kehilangan sesuatu . hal tersebut tergantung provider untuk ditambahkan atau tidak.<br>Kelebihan OpenVZ  :</p>
+<ol>
+<li>Kecepatan akses disk dan latensi disk OpenVZ adalah pemenang yang jelas jika dibandingkan dengan KVM dan Xen<br>Kekurangan Openvz  :</li>
+<li>OpenVZ hanya mendukung Linux</li>
+</ol>
+<p>Nah itulah dia perbedaan Antara VPS XEN, KVM dan OPENVZ.</p>
+
+        </div>
+
+        <blockquote class="post-copyright">
+    
+    <div class="content">
+        
+<span class="post-time">
+    Last updated: <time datetime="2018-02-19T13:58:40.793Z" itemprop="dateUpdated">2018-02-19 20:58:40</time>
+</span><br>
+
+
+        
+        Anda Dapat Membagikan Postingan Ini Dengan Link ：<a href="/perbedaan-vps-kvm-xen-openvz/" target="_blank" rel="external">http://rifkytech.github.io/perbedaan-vps-kvm-xen-openvz/</a>
+        
+    </div>
+    
+    <footer>
+        <a href="http://rifkytech.github.io">
+            <img src="https://avatars2.githubusercontent.com/u/29800086?s=400&v=4" alt="Muhammad Rifky Abimayu">
+            Muhammad Rifky Abimayu
+        </a>
+    </footer>
+</blockquote>
+
+        
+
+
+        <div class="post-footer">
+            
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Informasi/">Informasi</a></li></ul>
+
+
+            
+
+
+        </div>
+    </div>
+
+    
+<nav class="post-nav flex-row flex-justify-between flex-row-reverse">
+  
+
+  
+    <div class="waves-block waves-effect next">
+      <a href="/membuat-blog-dengan-hexo/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">Membuat Blog Dengan Hexo</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+
+</div>
+
+        <footer class="footer">
+    <div class="top">
+        
+<p>
+    <span id="busuanzi_container_site_uv" style='display:none'>
+        Pengunjung Situs：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style='display:none'>
+        Lalu Lintas：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+        <p>
+            
+            <span>This blog is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</span>
+        </p>
+    </div>
+    <div class="bottom">
+        <p><span>Muhammad Rifky Abimayu &copy; 2018</span>
+            <span>
+                
+                Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a>
+            </span>
+        </p>
+    </div>
+</footer>
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+    <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+<script>
+var BLOG = { ROOT: '/', SHARE: false, REWARD: false };
+
+
+</script>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/main.min.js"></script>
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item">
+    <a href="{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</template>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/search.min.js" async></script>
+
+
+
+
+
+
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+<script>
+(function() {
+    var OriginTitile = document.title, titleTime;
+    document.addEventListener('visibilitychange', function() {
+        if (document.hidden) {
+            document.title = 'Jangan Pergi！';
+            clearTimeout(titleTime);
+        } else {
+            document.title = 'Bagus!, Silahkan Baca Kembali :)';
+            titleTime = setTimeout(function() {
+                document.title = OriginTitile;
+            },2000);
+        }
+    });
+})();
+</script>
+
+
+
+</body>
+</html>
