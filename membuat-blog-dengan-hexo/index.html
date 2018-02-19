@@ -159,6 +159,154 @@
 
 <div class="container body-wrap">
     
+    <aside class="post-widget">
+        <nav class="post-toc-wrap post-toc-shrink" id="post-toc">
+            <h4>Topic List</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Pengenalan-Hexo"><span class="post-toc-number">1.</span> <span class="post-toc-text">Pengenalan Hexo</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Mengapa-Memilih-Hexo"><span class="post-toc-number">2.</span> <span class="post-toc-text">Mengapa Memilih Hexo</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Mulai-Membuat-Blog"><span class="post-toc-number">3.</span> <span class="post-toc-text">Mulai Membuat Blog</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Memasang-Hexo"><span class="post-toc-number">3.1.</span> <span class="post-toc-text">Memasang Hexo</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Mulai-Menulis"><span class="post-toc-number">3.2.</span> <span class="post-toc-text">Mulai Menulis</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Server-Generate-Deploy"><span class="post-toc-number">3.3.</span> <span class="post-toc-text">Server, Generate, Deploy</span></a></li></ol></li></ol>
+        </nav>
+    </aside>
+
+
+<article id="post-membuat-blog-dengan-hexo"
+  class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">Membuat Blog Dengan Hexo</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2018-02-19 10:49:09" datetime="2018-02-19T03:49:09.805Z"  itemprop="datePublished">2018-02-19</time>
+
+            
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Tutorial/">Tutorial</a></li></ul>
+
+
+
+            
+<span id="busuanzi_container_page_pv" title="文章总阅读量" style='display:none'>
+    <i class="icon icon-eye icon-pr"></i><span id="busuanzi_value_page_pv"></span>
+</span>
+
+
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <h2 id="Pengenalan-Hexo"><a href="#Pengenalan-Hexo" class="headerlink" title="Pengenalan Hexo"></a>Pengenalan Hexo</h2><p>Hexo adalah framework blog sederhana dan powerfull yang didukung oleh Node.js. Web statis generator yang super cepat ini hanya membutuhkan waktu beberapa detik untuk membangun sebuah website lengkap. Jika sebelumnya Anda pernah mengenal Jekyll atau Octopress, maka Hexo ini kurang lebih memiliki fungsi yang sama dengan kedua hal tersebut, hanya saja lebih mudah digunakan, menurut saya.</p>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="/img/hexo.png" alt="Hexo.io Homepage" title="">
+                </div>
+                <div class="image-caption">Hexo.io Homepage</div>
+            </figure>
+<h2 id="Mengapa-Memilih-Hexo"><a href="#Mengapa-Memilih-Hexo" class="headerlink" title="Mengapa Memilih Hexo"></a>Mengapa Memilih Hexo</h2><p>Sebelum mengenal Hexo, dulunya saya sempat menggunakan Jekyll untuk sakadar belajar bagaimana membangun halaman web statis. Hanya saja, kian lama saya belajar, kian saya sadari bahwa Jekyll ternyata memiliki kerumitan yang cukup pelik. Kerumitan ini ada pada pengolahan konten, kustomisasi tampilan, dan beberapa hal lainnya. Tentu saja, hal ini sangatlah subjektif. Namun, semoga itu bisa menjadi gambaran mengenai alasan saya lebih merekomendasikan Hexo dibandingkan dengan Jekyll.<br>Satu hal yang paling saya suka dari Hexo adalah kemudahannya dalam mengubah tema, mengatur pos, memodifikasi tampilan serta kecepatannya dalam merender/meng-generate sebuah perubahan pada laman. Beberapa hal tersebut agaknya belum saya temukan ketika menggunakan Jekyll (atau barangkali memang saya belum sampai pada pemahaman tingkat itu).<br>Hexo mendukung semua fitur GitHub-flavored Markdown dan sebagian besar plugin Octopress. Salah satu keuntungan utama dari Hexo adalah memungkinkan Anda untuk mentransfer blog atau situs ke web host dengan satu perintah.</p>
+<h2 id="Mulai-Membuat-Blog"><a href="#Mulai-Membuat-Blog" class="headerlink" title="Mulai Membuat Blog"></a>Mulai Membuat Blog</h2><p>Hal utama yang dibutuhkan dalam membuat blog menggunakan Hexo ini adalah sedikit pemahaman tentang Git/Github dan sintak markdown. Sebelum lanjut, silakan buat terlebih dahulu repositori yang nantinya akan digunakan untuk menyimpan berkas-berkas web/blog Anda. Nama repository yang digunakan biasanya adalah <b>namauser.github.io</b>.</p>
+<h3 id="Memasang-Hexo"><a href="#Memasang-Hexo" class="headerlink" title="Memasang Hexo"></a>Memasang Hexo</h3><p>Pasang Hexo pada sistem Anda memelalui perintah berikut.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-cli -g</span><br><span class="line">$ hexo init blog</span><br><span class="line">$ <span class="built_in">cd</span> blog</span><br><span class="line">$ npm install</span><br><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>(pastikan <code>npm</code> sudah terpasang pada sistem operasi yang Anda gunakan untuk menjalankan perintah-perintah di atas).<br>Jika Berhasil, dalam direktori <code>blog</code> Anda akan menemukan beberapa direktori dan berkas berikut ini.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">.</span><br><span class="line">├── _config.yml</span><br><span class="line">├── package.json</span><br><span class="line">├── scaffolds</span><br><span class="line">├── <span class="built_in">source</span></span><br><span class="line">|   ├── _drafts</span><br><span class="line">|   └── _posts</span><br><span class="line">└── themes</span><br></pre></td></tr></table></figure>
+<p>Silakan sunting berkas  <code> _config.yml </code> sesuai dengan yang Anda inginkan. Pengaturan dasar situs/blog Anda berada pada berkas ini. Beberapa pengaturan yang dapat Anda ubah, antara lain;</p>
+<ul>
+<li>nama blog</li>
+<li>subnama</li>
+<li>deskripsi/keterangan</li>
+<li>alamat blog</li>
+<li>tema</li>
+<li>default pos</li>
+<li>dll</li>
+</ul>
+<p>Untuk mempermudah Anda dalam men-deploy berkas lokal Anda ke repostory Github, saya sarankan untuk memasang <code>Plugin hexo-deployer-plugin</code>. Cara pemasangannya cukup mudah, cukup jalankan perintah</p>
+<p><code> npm install hexo-deployer-git –save </code></p>
+<p>pada direktori <code> blog </code> Anda.<br>Jika sudah, sunting kembali berkas _config.yml, kemudian isikan data berikut ke dalam berkas tersebut;</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  <span class="built_in">type</span>: git</span><br><span class="line">  repo: &amp;lt;repository url&amp;gt;</span><br><span class="line">  branch: [branch]</span><br><span class="line">  message: [message]</span><br></pre></td></tr></table></figure>
+<p>Untuk lebih jelasnya, Silakan perhatikan contoh berikut;</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  <span class="built_in">type</span>: git</span><br><span class="line">  repo: git@github.com:/rifkytech/rifkytech.github.io</span><br><span class="line">  branch: master</span><br><span class="line">  message: <span class="string">"&#123;&#123; now('YYYY-MM-DD HH:mm:ss') &#125;&#125; "</span></span><br></pre></td></tr></table></figure>
+<p>Selesailah pengaturan dasar blog Anda.</p>
+<h3 id="Mulai-Menulis"><a href="#Mulai-Menulis" class="headerlink" title="Mulai Menulis"></a>Mulai Menulis</h3><p>Untuk membuat sebuah pos, cukup jalan perintah;</p>
+<p><code>hexo new post “Judul Pos”</code></p>
+<p>secara otomatis, Hexo akan membuat berkas berjudul “Judul Pos.md” pada direktori <code>source/_post. </code> Hexo juga memungkinkan Anda untuk membuat draft terlebih dahulu untuk tulisan-tulisan Anda atau sebuah halaman khusus jika Anda menginginkannya.</p>
+<p><code>hexo new draft “judul draft”</code></p>
+<p>atau</p>
+<p><code>hexo new page “judul laman”</code></p>
+<p>Silakan sunting berkas <code>*.md</code> yang telah digenerate tadi menggunakan pengolah teks favorit Anda.</p>
+<h3 id="Server-Generate-Deploy"><a href="#Server-Generate-Deploy" class="headerlink" title="Server, Generate, Deploy"></a>Server, Generate, Deploy</h3><p>Setelah menulis, Anda dapat melihat pratayang perubahan yang baru saja Anda lakukan<br>dengan menjalankan perintah;</p>
+<p><code>hexo server</code> atau <code> hexo server –draft</code></p>
+<p>dan silakan lihat hasilnya pada tautan <a href="http://localhost:4000/" target="_blank" rel="noopener"></a>.<br>Jika telah sesuai, silakan publish tulisan Anda dengan perintah;</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>Selamat, situs Anda telah tayang!<br>Semoga tulisan ini bermanfaat. Bila ada kekurangan dalam tulisan ini, saya nantikan saran Anda mengisi kotak masuk saya di  <a href="mailto:saya@rifky.tech" target="_blank" rel="noopener">saya@rifky.tech</a></p>
+
+        </div>
+	
+	<blockquote class="post-copyright">
+    
+    <div class="content">
+        
+<span class="post-time">
+    Last updated: <time datetime="2018-02-19T06:36:55.518Z" itemprop="dateUpdated">2018-02-19 13:36:55</time>
+</span><br>
+
+
+        
+        Anda Dapat Membagikan Postingan Ini Dengan Link ：<a href="/membuat-blog-dengan-hexo/" target="_blank" rel="external">http://rifkytech.github.io/membuat-blog-dengan-hexo/</a>
+        
+    </div>
+    
+    <footer>
+        <a href="http://rifkytech.github.io">
+            <img src="https://avatars2.githubusercontent.com/u/29800086?s=400&v=4" alt="Muhammad Rifky Abimayu">
+            Muhammad Rifky Abimayu
+        </a>
+    </footer>
+</blockquote>
+
+        
+
+
+        <div class="post-footer">
+            
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Tutorial/">Tutorial</a></li></ul>
+
+
+            
+
+
+        </div>
+    </div>
+
+
+    
+<nav class="post-nav flex-row flex-justify-between flex-row-reverse">
+  
+
+  
+    <div class="waves-block waves-effect next">
+      <a href="/mengubah-alamat-url-phpmyadmin-pada-ubuntu/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">Mengubah Alamat URL phpMyAdmin di Ubuntu</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+
+    <!--
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+
+
 </div>
 
         <footer class="footer">
