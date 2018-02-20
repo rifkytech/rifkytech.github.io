@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+
+    
+
+    
+
+
+
+    <meta charset="utf-8">
+    
+    
+    
+    <title>Mengenal Angular.js | Muhammad Rifky Abimayu | Learn, &amp; Try!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#088ae0">
+    
+    
+    <meta name="keywords" content="informasi">
+    <meta name="description" content="Apa Itu Angular.Js ?“Angular JS adalah salah satu framework javascript yang mengusungkan pola MV* dan dikembangkan oleh google” Angular JS biasanya digunakan sebagai framework di bagian front end suat">
+<meta name="keywords" content="informasi">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Mengenal Angular.js">
+<meta property="og:url" content="http://rifkytech.github.io/mengenal_angular-js/index.html">
+<meta property="og:site_name" content="Muhammad Rifky Abimayu">
+<meta property="og:description" content="Apa Itu Angular.Js ?“Angular JS adalah salah satu framework javascript yang mengusungkan pola MV* dan dikembangkan oleh google” Angular JS biasanya digunakan sebagai framework di bagian front end suat">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://2.bp.blogspot.com/-I7WOZ6YfIng/WdTVmvBrSmI/AAAAAAAAA88/3KWGWaYMeww85tiBWMqq6dxTTHYK0zBJwCLcBGAs/s1600/Untitled.png">
+<meta property="og:image" content="https://1.bp.blogspot.com/-nHLeRDpMxfs/WouE4b849OI/AAAAAAAABXk/7U2V3PNdCkYVCWCm0tZk8TbywfXrMjRCgCLcBGAs/s1600/angular.png">
+<meta property="og:image" content="https://4.bp.blogspot.com/-GaL-LkFD_Xo/WouGsFMYzeI/AAAAAAAABXw/C8j96wG0GqEO9NGk1B4UU90ZgXWEhzaLQCLcBGAs/s1600/angular.png">
+<meta property="og:image" content="https://2.bp.blogspot.com/-L-Ob4MQi0pg/WouHZtKYcMI/AAAAAAAABYE/KLJ2pE-Ks1sS70BmOfreND8k6Oi3HNfUACLcBGAs/s1600/angular.png">
+<meta property="og:updated_time" content="2018-02-20T02:28:06.695Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Mengenal Angular.js">
+<meta name="twitter:description" content="Apa Itu Angular.Js ?“Angular JS adalah salah satu framework javascript yang mengusungkan pola MV* dan dikembangkan oleh google” Angular JS biasanya digunakan sebagai framework di bagian front end suat">
+<meta name="twitter:image" content="https://2.bp.blogspot.com/-I7WOZ6YfIng/WdTVmvBrSmI/AAAAAAAAA88/3KWGWaYMeww85tiBWMqq6dxTTHYK0zBJwCLcBGAs/s1600/Untitled.png">
+    
+    <link rel="shortcut icon" href="https://www.mexious.net/favicon.ico">
+    <link rel="stylesheet" href="//unpkg.com/hexo-theme-material-indigo@latest/css/style.css">
+    <script>window.lazyScripts=[]</script>
+
+    <!-- custom head -->
+    
+
+</head>
+
+<body>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide" >
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap" style="background-image:url(/img/background.png)">
+      <div class="brand">
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="https://avatars2.githubusercontent.com/u/29800086?s=400&v=4">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">Muhammad Rifky Abimayu</h5>
+          <a href="mailto:saya@rifky.tech" title="saya@rifky.tech" class="mail">saya@rifky.tech</a>
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="waves-block waves-effect">
+              <a href="/"  >
+                <i class="icon icon-lg icon-home"></i>
+                Home
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/archives"  >
+                <i class="icon icon-lg icon-archives"></i>
+                Archives
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/tags/Tutorial"  >
+                <i class="icon icon-lg icon-tags"></i>
+                Tags
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/categories/Tutorial"  >
+                <i class="icon icon-lg icon-th-list"></i>
+                Categories
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://github.com/rifkytech" target="_blank" >
+                <i class="icon icon-lg icon-github"></i>
+                Github
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://www.mexious.net"  >
+                <i class="icon icon-lg icon-link"></i>
+                Mexious Media
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">Mengenal Angular.js</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="Search">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+    </div>
+</header>
+<header class="content-header post-header">
+
+    <div class="container fade-scale">
+        <h1 class="title">Mengenal Angular.js</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2018-02-20T02:05:08.470Z" itemprop="datePublished" class="page-time">
+  2018-02-20
+</time>
+
+
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/informasi/">informasi</a></li></ul>
+
+            
+        </h5>
+    </div>
+
+    
+
+
+</header>
+
+
+<div class="container body-wrap">
+    
+    <aside class="post-widget">
+        <nav class="post-toc-wrap post-toc-shrink" id="post-toc">
+            <h4>Topic List</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Apa-Itu-Angular-Js"><span class="post-toc-number">1.</span> <span class="post-toc-text">Apa Itu Angular.Js ?</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Bagaimana-Instalasi-Angular-Js"><span class="post-toc-number">2.</span> <span class="post-toc-text">Bagaimana Instalasi Angular.Js?</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Membuat-Project-Pertama-“Hello-World”"><span class="post-toc-number">3.</span> <span class="post-toc-text">Membuat Project Pertama “Hello World”</span></a></li></ol>
+        </nav>
+    </aside>
+
+
+<article id="post-mengenal_angular-js"
+  class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">Mengenal Angular.js</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2018-02-20 09:05:08" datetime="2018-02-20T02:05:08.470Z"  itemprop="datePublished">2018-02-20</time>
+
+            
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/informasi/">informasi</a></li></ul>
+
+
+
+            
+<span id="busuanzi_container_page_pv" title="文章总阅读量" style='display:none'>
+    <i class="icon icon-eye icon-pr"></i><span id="busuanzi_value_page_pv"></span>
+</span>
+
+
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <h2 id="Apa-Itu-Angular-Js"><a href="#Apa-Itu-Angular-Js" class="headerlink" title="Apa Itu Angular.Js ?"></a>Apa Itu Angular.Js ?</h2><p>“Angular JS adalah salah satu framework javascript yang mengusungkan pola MV* dan dikembangkan oleh google”</p>
+<p>Angular JS biasanya digunakan sebagai framework di bagian front end suatu website. Salah satu kelebihan dari angular js ini adalah data binding sehingga antara model dan controller datanya akan dilakukan sinkronisasi secara asynchronous. Kelebihan angular yang lain adalah angular dapat melakukan routing, membuat sebuah directive dan biasanya digunakan sebagai client untuk sebuah web service.</p>
+<h2 id="Bagaimana-Instalasi-Angular-Js"><a href="#Bagaimana-Instalasi-Angular-Js" class="headerlink" title="Bagaimana Instalasi Angular.Js?"></a>Bagaimana Instalasi Angular.Js?</h2><p>Untuk Memulai Membuat Sebuah Project Dengan Angular.js, Kita Dapat Melakukan Instalasi Dengan Berkunjung Ke <a href="https://angularjs.org/" target="_blank" rel="noopener">https://angularjs.org/</a> dan anda bisa memilih bagaimana cara anda untuk menginstall, mulai dari Mendownload nya langsung, dengan npm, bower. kalau saya menggunakan cdn angular.min.js yang disediakan oleh Google.</p>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="https://2.bp.blogspot.com/-I7WOZ6YfIng/WdTVmvBrSmI/AAAAAAAAA88/3KWGWaYMeww85tiBWMqq6dxTTHYK0zBJwCLcBGAs/s1600/Untitled.png" alt="Download Angular.js" title="">
+                </div>
+                <div class="image-caption">Download Angular.js</div>
+            </figure>
+<h2 id="Membuat-Project-Pertama-“Hello-World”"><a href="#Membuat-Project-Pertama-“Hello-World”" class="headerlink" title="Membuat Project Pertama “Hello World”"></a>Membuat Project Pertama “Hello World”</h2><p>Oke, Pertama Kita akan belajar hal yang paling dasar dulu semacam Hello World. Ketikkan kode di bawah ini</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"> <span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">title</span>&gt;</span>Belajar AngularJS<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span> <span class="attr">src</span>=<span class="string">"https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span> <span class="attr">ng-app</span>=<span class="string">""</span>&gt;</span></span><br><span class="line">     </span><br><span class="line">	<span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">placeholder</span>=<span class="string">"Masukkan Nama Kamu"</span> <span class="attr">ng-model</span>=<span class="string">"nama"</span>/&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">h3</span>&gt;</span>&#123;&#123;"Halo "+nama&#125;&#125;<span class="tag">&lt;/<span class="name">h3</span>&gt;</span></span><br><span class="line"> </span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>Lalu Save Dan Beri Nama index.html. Maka Setelah Itu Dibuat, Maka Akan Seperti Ini Hasilnya</p>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="https://1.bp.blogspot.com/-nHLeRDpMxfs/WouE4b849OI/AAAAAAAABXk/7U2V3PNdCkYVCWCm0tZk8TbywfXrMjRCgCLcBGAs/s1600/angular.png" alt="Gamber Percobaan 1" title="">
+                </div>
+                <div class="image-caption">Gamber Percobaan 1</div>
+            </figure>
+<p>Nah Mudahkan? Biar Mantap dan Seru Mari Kita Kreasikan file index.html Sedikit Menjadi Seperti Ini</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">title</span>&gt;</span>Belajar AngularJS<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"> </span><br><span class="line">	<span class="tag">&lt;<span class="name">style</span> <span class="attr">type</span>=<span class="string">"text/css"</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="undefined">		.merah&#123;</span></span><br><span class="line"><span class="undefined">			border:3px solid #c6535f;</span></span><br><span class="line"><span class="undefined">			border-radius: 5px;</span></span><br><span class="line"><span class="undefined">			padding: 5px;</span></span><br><span class="line"><span class="undefined">		&#125;</span></span><br><span class="line"><span class="undefined"> </span></span><br><span class="line"><span class="undefined">		.hijau&#123;</span></span><br><span class="line"><span class="undefined">			border:3px solid #35a06e;</span></span><br><span class="line"><span class="undefined">			border-radius: 5px;</span></span><br><span class="line"><span class="undefined">			padding: 5px;</span></span><br><span class="line"><span class="undefined">		&#125;</span></span><br><span class="line"><span class="undefined"> </span></span><br><span class="line"><span class="undefined">		div&#123;</span></span><br><span class="line"><span class="undefined">			margin-top: 20px;</span></span><br><span class="line"><span class="undefined">		&#125;</span></span><br><span class="line"><span class="undefined">	</span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span> <span class="attr">src</span>=<span class="string">"https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span> <span class="attr">ng-app</span>=<span class="string">""</span>&gt;</span></span><br><span class="line">     </span><br><span class="line">	<span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">placeholder</span>=<span class="string">"Masukkan Nama Kamu"</span> <span class="attr">ng-model</span>=<span class="string">"nama"</span>/&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">br</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">placeholder</span>=<span class="string">"Masukkan Theme"</span> <span class="attr">ng-model</span>=<span class="string">"kelas"</span>/&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">br</span>&gt;</span></span><br><span class="line"> </span><br><span class="line">	<span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"&#123;&#123;kelas&#125;&#125;"</span>&gt;</span>&#123;&#123;"Halo "+nama&#125;&#125;<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>Maka Hasilnya Akan Seperi ini </p>
+<p><img src="https://4.bp.blogspot.com/-GaL-LkFD_Xo/WouGsFMYzeI/AAAAAAAABXw/C8j96wG0GqEO9NGk1B4UU90ZgXWEhzaLQCLcBGAs/s1600/angular.png" alt="Gambar Angular 2"></p>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="https://2.bp.blogspot.com/-L-Ob4MQi0pg/WouHZtKYcMI/AAAAAAAABYE/KLJ2pE-Ks1sS70BmOfreND8k6Oi3HNfUACLcBGAs/s1600/angular.png" alt="Gambar Angular 3" title="">
+                </div>
+                <div class="image-caption">Gambar Angular 3</div>
+            </figure>
+<p>Nah Sudah Tau Apa Yang Berubah? Ketika Saya Membuat “Hijau” Maka Theme nya akan Berubah warna Menjadi Hijau, Begitu juga dengan “Merah”.</p>
+<p>Ok Mungkin Itu Saja Untuk Perkenalan Angular.js. Ini Merupakan Pembelajaran Yang Dasar Banget. </p>
+
+        </div>
+
+        <blockquote class="post-copyright">
+    
+    <div class="content">
+        
+<span class="post-time">
+    Last updated: <time datetime="2018-02-20T02:28:06.695Z" itemprop="dateUpdated">2018-02-20 09:28:06</time>
+</span><br>
+
+
+        
+        Anda Dapat Membagikan Postingan Ini Dengan Link ：<a href="/mengenal_angular-js/" target="_blank" rel="external">http://rifkytech.github.io/mengenal_angular-js/</a>
+        
+    </div>
+    
+    <footer>
+        <a href="http://rifkytech.github.io">
+            <img src="https://avatars2.githubusercontent.com/u/29800086?s=400&v=4" alt="Muhammad Rifky Abimayu">
+            Muhammad Rifky Abimayu
+        </a>
+    </footer>
+</blockquote>
+
+        
+
+
+        <div class="post-footer">
+            
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/informasi/">informasi</a></li></ul>
+
+
+            
+
+
+        </div>
+    </div>
+
+    
+<nav class="post-nav flex-row flex-justify-between flex-row-reverse">
+  
+
+  
+    <div class="waves-block waves-effect next">
+      <a href="/perbedaan-vps-kvm-xen-openvz/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">Perbedaan VPS, KVM, OpenVz</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+
+</div>
+
+        <footer class="footer">
+    <div class="top">
+        
+<p>
+    <span id="busuanzi_container_site_uv" style='display:none'>
+        Pengunjung Situs：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style='display:none'>
+        Lalu Lintas：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+        <p>
+            
+            <span>This blog is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</span>
+        </p>
+    </div>
+    <div class="bottom">
+        <p><span>Muhammad Rifky Abimayu &copy; 2018</span>
+            <span>
+                
+                Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a>
+            </span>
+        </p>
+    </div>
+</footer>
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+    <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+<script>
+var BLOG = { ROOT: '/', SHARE: false, REWARD: false };
+
+
+</script>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/main.min.js"></script>
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item">
+    <a href="{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</template>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/search.min.js" async></script>
+
+
+
+
+
+
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+<script>
+(function() {
+    var OriginTitile = document.title, titleTime;
+    document.addEventListener('visibilitychange', function() {
+        if (document.hidden) {
+            document.title = 'Jangan Pergi！';
+            clearTimeout(titleTime);
+        } else {
+            document.title = 'Bagus!, Silahkan Baca Kembali :)';
+            titleTime = setTimeout(function() {
+                document.title = OriginTitile;
+            },2000);
+        }
+    });
+})();
+</script>
+
+
+
+</body>
+</html>
