@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+
+    
+
+    
+
+
+
+    <meta charset="utf-8">
+    
+    
+    
+    <title>No title | Muhammad Rifky Abimayu | Try, find error, learn, &amp; Try Again !</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#088ae0">
+    
+    
+    <meta name="keywords" content="">
+    <meta name="description" content="title : Membuat Server Dengan Node.js (Hello World)tag :  Node Js Tutorialcategories : Tutorial   PendahuluanKali Saya Share Tutorial “Membuat Server Node.js” Ya, Biasa nya ini Sering Menggunakan Kat">
+<meta property="og:type" content="article">
+<meta property="og:title" content="No title">
+<meta property="og:url" content="http://rifkytech.github.io/membuat-server-dengan-node-js/index.html">
+<meta property="og:site_name" content="Muhammad Rifky Abimayu">
+<meta property="og:description" content="title : Membuat Server Dengan Node.js (Hello World)tag :  Node Js Tutorialcategories : Tutorial   PendahuluanKali Saya Share Tutorial “Membuat Server Node.js” Ya, Biasa nya ini Sering Menggunakan Kat">
+<meta property="og:locale" content="en_US">
+<meta property="og:updated_time" content="2018-02-21T05:08:44.836Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="No title">
+<meta name="twitter:description" content="title : Membuat Server Dengan Node.js (Hello World)tag :  Node Js Tutorialcategories : Tutorial   PendahuluanKali Saya Share Tutorial “Membuat Server Node.js” Ya, Biasa nya ini Sering Menggunakan Kat">
+    
+    <link rel="shortcut icon" href="https://www.mexious.net/favicon.ico">
+    <link rel="stylesheet" href="//unpkg.com/hexo-theme-material-indigo@latest/css/style.css">
+    <script>window.lazyScripts=[]</script>
+
+    <!-- custom head -->
+    
+
+</head>
+
+<body>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide" >
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap" style="background-image:url(/img/background.png)">
+      <div class="brand">
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="https://avatars2.githubusercontent.com/u/29800086?s=400&v=4">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">Muhammad Rifky Abimayu</h5>
+          <a href="mailto:saya@rifky.tech" title="saya@rifky.tech" class="mail">saya@rifky.tech</a>
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="waves-block waves-effect">
+              <a href="/"  >
+                <i class="icon icon-lg icon-home"></i>
+                Home
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/archives"  >
+                <i class="icon icon-lg icon-archives"></i>
+                Archives
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/tags/Tutorial"  >
+                <i class="icon icon-lg icon-tags"></i>
+                Tags
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/categories/Tutorial"  >
+                <i class="icon icon-lg icon-th-list"></i>
+                Categories
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://github.com/rifkytech" target="_blank" >
+                <i class="icon icon-lg icon-github"></i>
+                Github
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://www.mexious.net"  >
+                <i class="icon icon-lg icon-link"></i>
+                Mexious Media
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">No title</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="Search">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+    </div>
+</header>
+<header class="content-header post-header">
+
+    <div class="container fade-scale">
+        <h1 class="title">No title</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2018-02-21T04:42:29.080Z" itemprop="datePublished" class="page-time">
+  2018-02-21
+</time>
+
+
+            
+        </h5>
+    </div>
+
+    
+
+
+</header>
+
+
+<div class="container body-wrap">
+    
+    <aside class="post-widget">
+        <nav class="post-toc-wrap post-toc-shrink" id="post-toc">
+            <h4>Topic List</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Pendahuluan"><span class="post-toc-number">1.</span> <span class="post-toc-text">Pendahuluan</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Bahan-Bahan"><span class="post-toc-number">2.</span> <span class="post-toc-text">Bahan Bahan</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Step-By-Step"><span class="post-toc-number">3.</span> <span class="post-toc-text">Step By Step</span></a></li></ol>
+        </nav>
+    </aside>
+
+
+<article id="post-membuat-server-dengan-node-js"
+  class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">No title</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2018-02-21 11:42:29" datetime="2018-02-21T04:42:29.080Z"  itemprop="datePublished">2018-02-21</time>
+
+            
+
+
+            
+<span id="busuanzi_container_page_pv" title="文章总阅读量" style='display:none'>
+    <i class="icon icon-eye icon-pr"></i><span id="busuanzi_value_page_pv"></span>
+</span>
+
+
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <hr>
+<p>title : Membuat Server Dengan Node.js (Hello World)<br>tag :</p>
+<ul>
+<li>Node Js</li>
+<li>Tutorial<br>categories : Tutorial</li>
+</ul>
+<hr>
+<h3 id="Pendahuluan"><a href="#Pendahuluan" class="headerlink" title="Pendahuluan"></a>Pendahuluan</h3><p>Kali Saya Share Tutorial “Membuat Server Node.js” Ya, Biasa nya ini Sering Menggunakan Kata “Hello World” Mengapa? Karena SetiapTester Pertama Aplikasi Node.js nya, Pasti Rata-Rata Menggunakan “Hello World”. Oke , Langsung Saja Kita Menset up nya.</p>
+<h3 id="Bahan-Bahan"><a href="#Bahan-Bahan" class="headerlink" title="Bahan Bahan"></a>Bahan Bahan</h3><p>Untuk bahan” si gk banyak, Cukup Denngan Sebuah Laptop Yang Sudah Diinstal Node.js,<br>Untuk Yang Belum Silahkan Download Dulu Di Google :D</p>
+<h3 id="Step-By-Step"><a href="#Step-By-Step" class="headerlink" title="Step By Step"></a>Step By Step</h3><ol>
+<li>Buka Notepad atau Text Editor Kesukaan anda Isi Dengan script Berikut</li>
+</ol>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">'use strict'</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> http = <span class="built_in">require</span>(<span class="string">'http'</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> port = <span class="number">9432</span>;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">http.createServer( <span class="function"><span class="keyword">function</span> (<span class="params">req, res</span>)</span>&#123;</span><br><span class="line"></span><br><span class="line"> <span class="keyword">var</span> body = <span class="string">"&lt;h1&gt;Hello World&lt;/h1&gt;"</span></span><br><span class="line"></span><br><span class="line"> res.writeHead(<span class="number">200</span>, &#123;<span class="string">'Content-type'</span>: <span class="string">'text/html'</span>&#125;);</span><br><span class="line"></span><br><span class="line"> res.write(body);</span><br><span class="line"></span><br><span class="line"> res.end();</span><br><span class="line"></span><br><span class="line"> &#125;).listen(port);</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">"server ini berjalan pada port "</span>+port);</span><br></pre></td></tr></table></figure>
+<ol>
+<li>Save, Beri Nama Sesuka hati, Asalkan Menggunakan Extensi .js</li>
+<li>Buka Cmd, Sesuaikan Dengan File Direktori Dimana Kamu Menyimpan File .js Tadi<br>Contoh, Saya Simpan Di File C:\Users\ANONYMOUS\Documents\NodeTest\apps.js<br>Nah Defautl Di CMD nya File C:\Users\ANONYMOUS, Maka  Cara Mengubah nya<br>Klik Perintah “cd Documents”, “cd NodeTest” . mari Kita Lihat Gambar nya</li>
+</ol>
+
+        </div>
+
+        <blockquote class="post-copyright">
+    
+    <div class="content">
+        
+<span class="post-time">
+    Last updated: <time datetime="2018-02-21T05:08:44.836Z" itemprop="dateUpdated">2018-02-21 12:08:44</time>
+</span><br>
+
+
+        
+        Anda Dapat Membagikan Postingan Ini Dengan Link ：<a href="/membuat-server-dengan-node-js/" target="_blank" rel="external">http://rifkytech.github.io/membuat-server-dengan-node-js/</a>
+        
+    </div>
+    
+    <footer>
+        <a href="http://rifkytech.github.io">
+            <img src="https://avatars2.githubusercontent.com/u/29800086?s=400&v=4" alt="Muhammad Rifky Abimayu">
+            Muhammad Rifky Abimayu
+        </a>
+    </footer>
+</blockquote>
+
+        
+
+
+        <div class="post-footer">
+            
+
+            
+
+
+        </div>
+    </div>
+
+    
+<nav class="post-nav flex-row flex-justify-between flex-row-reverse">
+  
+
+  
+    <div class="waves-block waves-effect next">
+      <a href="/membuat-style-alert-box/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">Membuat Style Alert Box dengan JavaScript</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+
+</div>
+
+        <footer class="footer">
+    <div class="top">
+        
+<p>
+    <span id="busuanzi_container_site_uv" style='display:none'>
+        Pengunjung Situs：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style='display:none'>
+        Lalu Lintas：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+        <p>
+            
+            <span>This blog is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</span>
+        </p>
+    </div>
+    <div class="bottom">
+        <p><span>Muhammad Rifky Abimayu &copy; 2018</span>
+            <span>
+                
+                Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a>
+            </span>
+        </p>
+    </div>
+</footer>
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+    <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+<script>
+var BLOG = { ROOT: '/', SHARE: false, REWARD: false };
+
+
+</script>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/main.min.js"></script>
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item">
+    <a href="{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</template>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/search.min.js" async></script>
+
+
+
+
+
+
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+<script>
+(function() {
+    var OriginTitile = document.title, titleTime;
+    document.addEventListener('visibilitychange', function() {
+        if (document.hidden) {
+            document.title = 'Ayo Kembali Ke Blog :)';
+            clearTimeout(titleTime);
+        } else {
+            document.title = 'Bagus!, Silahkan Baca Kembali :)';
+            titleTime = setTimeout(function() {
+                document.title = OriginTitile;
+            },2000);
+        }
+    });
+})();
+</script>
+
+
+
+</body>
+</html>
