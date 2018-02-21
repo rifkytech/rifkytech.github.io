@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+
+    
+
+    
+
+
+
+    <meta charset="utf-8">
+    
+    
+    
+    <title>Mengenal Vue.js | Muhammad Rifky Abimayu | Try, find error, learn, &amp; Try Again !</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#088ae0">
+    
+    
+    <meta name="keywords" content="Informasi,JavaScript,Vue JS">
+    <meta name="description" content="Apa Itu vue.js?Vue.js adalah suatu librari Javascript yang digunakan untuk membangun antar muka sebuah website yang interaktif. Supaya lebih singkat, untuk selanjutnya Vue.js saya tulis Vue. Library d">
+<meta name="keywords" content="Informasi,JavaScript,Vue JS">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Mengenal Vue.js">
+<meta property="og:url" content="http://rifkytech.github.io/mengenal-vue-js/index.html">
+<meta property="og:site_name" content="Muhammad Rifky Abimayu">
+<meta property="og:description" content="Apa Itu vue.js?Vue.js adalah suatu librari Javascript yang digunakan untuk membangun antar muka sebuah website yang interaktif. Supaya lebih singkat, untuk selanjutnya Vue.js saya tulis Vue. Library d">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://4.bp.blogspot.com/-4_TcDmEamQA/WdL0gLiNW0I/AAAAAAAAA6Q/hLokc_TVpKkPlSVNFu28RroWqT8gftxsQCLcBGAs/s320/Untitled.png">
+<meta property="og:updated_time" content="2018-02-21T19:52:37.722Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Mengenal Vue.js">
+<meta name="twitter:description" content="Apa Itu vue.js?Vue.js adalah suatu librari Javascript yang digunakan untuk membangun antar muka sebuah website yang interaktif. Supaya lebih singkat, untuk selanjutnya Vue.js saya tulis Vue. Library d">
+<meta name="twitter:image" content="https://4.bp.blogspot.com/-4_TcDmEamQA/WdL0gLiNW0I/AAAAAAAAA6Q/hLokc_TVpKkPlSVNFu28RroWqT8gftxsQCLcBGAs/s320/Untitled.png">
+    
+    <link rel="shortcut icon" href="https://www.mexious.net/favicon.ico">
+    <link rel="stylesheet" href="//unpkg.com/hexo-theme-material-indigo@latest/css/style.css">
+    <script>window.lazyScripts=[]</script>
+
+    <!-- custom head -->
+    
+
+</head>
+
+<body>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide" >
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap" style="background-image:url(/img/background.png)">
+      <div class="brand">
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="https://avatars2.githubusercontent.com/u/29800086?s=400&v=4">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">Muhammad Rifky Abimayu</h5>
+          <a href="mailto:saya@rifky.tech" title="saya@rifky.tech" class="mail">saya@rifky.tech</a>
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="waves-block waves-effect">
+              <a href="/"  >
+                <i class="icon icon-lg icon-home"></i>
+                Home
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/archives"  >
+                <i class="icon icon-lg icon-archives"></i>
+                Archives
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/tags/Tutorial"  >
+                <i class="icon icon-lg icon-tags"></i>
+                Tags
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/categories/Tutorial"  >
+                <i class="icon icon-lg icon-th-list"></i>
+                Categories
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://github.com/rifkytech" target="_blank" >
+                <i class="icon icon-lg icon-github"></i>
+                Github
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://www.mexious.net"  >
+                <i class="icon icon-lg icon-link"></i>
+                Mexious Media
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">Mengenal Vue.js</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="Search">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+    </div>
+</header>
+<header class="content-header post-header">
+
+    <div class="container fade-scale">
+        <h1 class="title">Mengenal Vue.js</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2018-02-21T19:52:36.791Z" itemprop="datePublished" class="page-time">
+  2018-02-22
+</time>
+
+
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Informasi/">Informasi</a></li></ul>
+
+            
+        </h5>
+    </div>
+
+    
+
+
+</header>
+
+
+<div class="container body-wrap">
+    
+    <aside class="post-widget">
+        <nav class="post-toc-wrap post-toc-shrink" id="post-toc">
+            <h4>Topic List</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Apa-Itu-vue-js"><span class="post-toc-number">1.</span> <span class="post-toc-text">Apa Itu vue.js?</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Bagaimana-Instalasi-Vue-js"><span class="post-toc-number">2.</span> <span class="post-toc-text">Bagaimana Instalasi Vue.js?</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Data-Binding"><span class="post-toc-number">3.</span> <span class="post-toc-text">Data Binding</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#Dengan-Cara-Konvensional"><span class="post-toc-number">3.1.</span> <span class="post-toc-text">Dengan Cara Konvensional</span></a></li></ol></li></ol>
+        </nav>
+    </aside>
+
+
+<article id="post-mengenal-vue-js"
+  class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">Mengenal Vue.js</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2018-02-22 02:52:36" datetime="2018-02-21T19:52:36.791Z"  itemprop="datePublished">2018-02-22</time>
+
+            
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Informasi/">Informasi</a></li></ul>
+
+
+
+            
+<span id="busuanzi_container_page_pv" title="文章总阅读量" style='display:none'>
+    <i class="icon icon-eye icon-pr"></i><span id="busuanzi_value_page_pv"></span>
+</span>
+
+
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <h3 id="Apa-Itu-vue-js"><a href="#Apa-Itu-vue-js" class="headerlink" title="Apa Itu vue.js?"></a>Apa Itu vue.js?</h3><p>Vue.js adalah suatu librari Javascript yang digunakan untuk membangun antar muka sebuah website yang interaktif. Supaya lebih singkat, untuk selanjutnya Vue.js saya tulis Vue. Library dari Vue difokuskan hanya pada view layer dan sangat mudah diimplementasikan dan diintegrasikan dengan library lain ataupun juga dengan project yang sudah ada sebelumnya. Untuk mempelajari Vue ini setidaknya kita sudah mengerti dasar-dasar HTML, CSS dan juga Javascript.</p>
+<h3 id="Bagaimana-Instalasi-Vue-js"><a href="#Bagaimana-Instalasi-Vue-js" class="headerlink" title="Bagaimana Instalasi Vue.js?"></a>Bagaimana Instalasi Vue.js?</h3><p>Perlu diketahui bahwa vue tidak mendukung browser IE8 dan versi-versi sebelumnya. Ada beberapa cara instalasi vue namun cara yang paling mudah adalah melalui CDN karena kita tidak perlu menyimpan file Vue.js di dalam project kita. Berikut ini adalah contoh bagaimana mereferensikan vue dari CDN:</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"en"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line"> <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></span><br><span class="line"> <span class="tag">&lt;<span class="name">title</span>&gt;</span>Vue1<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"> <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"https://unpkg.com/vue"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>engan mereferensikan vue dari CDN seperti cara diatas, maka kita akan secara otomatis mendapatkan versi vue terbaru yang sudah ada di CDN.</p>
+<h3 id="Data-Binding"><a href="#Data-Binding" class="headerlink" title="Data Binding"></a>Data Binding</h3><p>Seperti halnya pada saat mempelajari bahasa pemrograman lain, kita awali dengan menampilkan “Hello World”. Di sini saya akan menuliskan cara konvensional dan cara vue. Skenarionya adalah kita membuat sebuah input element dan pada input element tersebut kita akan menuliskan “Hello World” dan pada bagian bawahnya akan ada paragraf yang menyatakan nilai dari input element tersebut. Apabila kita merubah nilai input element maka keterangan di bagian bawahnya juga akan ikut berubah. Kira-kira seperti ini kodenya:</p>
+<h4 id="Dengan-Cara-Konvensional"><a href="#Dengan-Cara-Konvensional" class="headerlink" title="Dengan Cara Konvensional"></a>Dengan Cara Konvensional</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"en"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>Belajar Vue<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">h2</span>&gt;</span>Belajar Vue<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">id</span>=<span class="string">"input"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">'textValue'</span>&gt;</span>Value dari input text adalah: Hello World<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"https://code.jquery.com/jquery-3.2.1.min.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="undefined">    document.getElementById("input").value = "Hello World";</span></span><br><span class="line"><span class="undefined">window.onkeyup = keyup;</span></span><br><span class="line"><span class="undefined">    var inputTextValue;</span></span><br><span class="line"><span class="undefined">function keyup(e) &#123;</span></span><br><span class="line"><span class="undefined">        inputTextValue = e.target.value;</span></span><br><span class="line"><span class="undefined">        jQuery('#textValue').text("Value dari input text adalah: " + inputTextValue);</span></span><br><span class="line"><span class="undefined">    &#125;</span></span><br><span class="line"><span class="undefined">    </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>Apabila kita buka file HTML tersebut di web browser maka tampilannya seperti ini: </p>
+<p><img src="https://4.bp.blogspot.com/-4_TcDmEamQA/WdL0gLiNW0I/AAAAAAAAA6Q/hLokc_TVpKkPlSVNFu28RroWqT8gftxsQCLcBGAs/s320/Untitled.png" alt=""></p>
+<p>Itu Kata “Hello Word” Akan Berubah Jika Isi Kolom Tersebut Kita Ubah Juga, Jadi Hasil Inputan Terdapat Di Kolom nya</p>
+<p>Nah Ulangin Dengan Kreasi Anda Juga Agar Lebih Memahaminya.</p>
+<p>Sekian dari saya, info lagi bisa hubungi <a href="mailto:geeks@r-co.ga" target="_blank" rel="noopener">geeks@r-co.ga</a></p>
+
+        </div>
+
+        <blockquote class="post-copyright">
+    
+    <div class="content">
+        
+<span class="post-time">
+    Last updated: <time datetime="2018-02-21T19:52:37.722Z" itemprop="dateUpdated">2018-02-22 02:52:37</time>
+</span><br>
+
+
+        
+        Anda Dapat Membagikan Postingan Ini Dengan Link ：<a href="/mengenal-vue-js/" target="_blank" rel="external">http://rifkytech.github.io/mengenal-vue-js/</a>
+        
+    </div>
+    
+    <footer>
+        <a href="http://rifkytech.github.io">
+            <img src="https://avatars2.githubusercontent.com/u/29800086?s=400&v=4" alt="Muhammad Rifky Abimayu">
+            Muhammad Rifky Abimayu
+        </a>
+    </footer>
+</blockquote>
+
+        
+
+
+        <div class="post-footer">
+            
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Informasi/">Informasi</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JavaScript/">JavaScript</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Vue-JS/">Vue JS</a></li></ul>
+
+
+            
+
+
+        </div>
+    </div>
+
+    
+<nav class="post-nav flex-row flex-justify-between flex-row-reverse">
+  
+
+  
+    <div class="waves-block waves-effect next">
+      <a href="/membuat-server-dengan-node-js/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">Membuat Server Dengan Node.js (Hello World)</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+
+</div>
+
+        <footer class="footer">
+    <div class="top">
+        
+<p>
+    <span id="busuanzi_container_site_uv" style='display:none'>
+        Pengunjung Situs：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style='display:none'>
+        Lalu Lintas：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+        <p>
+            
+            <span>This blog is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</span>
+        </p>
+    </div>
+    <div class="bottom">
+        <p><span>Muhammad Rifky Abimayu &copy; 2018</span>
+            <span>
+                
+                Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a>
+            </span>
+        </p>
+    </div>
+</footer>
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+    <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+<script>
+var BLOG = { ROOT: '/', SHARE: false, REWARD: false };
+
+
+</script>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/main.min.js"></script>
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item">
+    <a href="{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</template>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/search.min.js" async></script>
+
+
+
+
+
+
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+<script>
+(function() {
+    var OriginTitile = document.title, titleTime;
+    document.addEventListener('visibilitychange', function() {
+        if (document.hidden) {
+            document.title = 'Ayo Kembali Ke Blog :)';
+            clearTimeout(titleTime);
+        } else {
+            document.title = 'Bagus!, Silahkan Baca Kembali :)';
+            titleTime = setTimeout(function() {
+                document.title = OriginTitile;
+            },2000);
+        }
+    });
+})();
+</script>
+
+
+
+</body>
+</html>
