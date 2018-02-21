@@ -243,7 +243,14 @@
     </div>
 
     
-<nav class="post-nav flex-row flex-justify-between flex-row-reverse">
+<nav class="post-nav flex-row flex-justify-between">
+  
+    <div class="waves-block waves-effect prev">
+      <a href="/membuat-style-alert-box/" id="post-prev" class="post-nav-link">
+        <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
+        <h4 class="title">Membuat Style Alert Box dengan JavaScript</h4>
+      </a>
+    </div>
   
 
   
@@ -353,7 +360,7 @@ var BLOG = { ROOT: '/', SHARE: false, REWARD: false };
     var OriginTitile = document.title, titleTime;
     document.addEventListener('visibilitychange', function() {
         if (document.hidden) {
-            document.title = 'Jangan Pergi！';
+            document.title = 'Ayo Kembali Ke Blog :)';
             clearTimeout(titleTime);
         } else {
             document.title = 'Bagus!, Silahkan Baca Kembali :)';
