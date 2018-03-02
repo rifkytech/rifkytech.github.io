@@ -28,7 +28,7 @@
 <meta property="og:site_name" content="Muhammad Rifky Abimayu">
 <meta property="og:description" content="PendahuluanVNC, atau “Virtual Network Computing”, adalah sistem koneksi yang memungkinkan Anda menggunakan keyboard dan mouse untuk berinteraksi dengan lingkungan desktop grafis di server jauh. Ini me">
 <meta property="og:locale" content="en_US">
-<meta property="og:updated_time" content="2018-03-02T04:08:12.723Z">
+<meta property="og:updated_time" content="2018-03-02T04:37:24.557Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Install &amp; Konfigurasi VNC Server Pada Ubuntu Server">
 <meta name="twitter:description" content="PendahuluanVNC, atau “Virtual Network Computing”, adalah sistem koneksi yang memungkinkan Anda menggunakan keyboard dan mouse untuk berinteraksi dengan lingkungan desktop grafis di server jauh. Ini me">
@@ -198,7 +198,21 @@
 <h3 id="Step-2"><a href="#Step-2" class="headerlink" title="Step 2"></a>Step 2</h3><p>Step 2, yaitu mengkonfigurasi VNCServer<br>File konfigurasi vncserver terletak pada <code>~/.vnc/xstartup</code> nah, karena tadi kita menuliskan <code>vncserver</code>,<br>maka kita perlu mematikan port vnc dahulu dengan cara</p>
 <p><code>vncserver -kill :1</code></p>
 <p>Output yang dikeluarkan :</p>
-<p><code>Killing Xtightvnc process ID 17648</code></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Killing Xtightvnc process ID 17648</span><br></pre></td></tr></table></figure>
+<p>Kemudian, konfigurasi <code>xstartup</code> agar memulai desktop xfce4 , tetapi kita backup dahulu<br>file konfigurasi lama nya</p>
+<p><code>mv ~/.vnc/xstartup ~/.vnc/xstartup.bak</code></p>
+<p>Nah Buat Settingan Baru <code>xstartup</code></p>
+<p><code>nano ~/.vnc/xstartup</code></p>
+<p>Paste Konfigurasi Berikut :</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#!/bin/bash</span></span><br><span class="line">xrdb <span class="variable">$HOME</span>/.Xresources</span><br><span class="line">startxfce4 &amp;</span><br></pre></td></tr></table></figure>
+<p>Nah, Selanjutnya Memberikan Permission Untuk File <code>xstartup</code> Yang Baru Dengan :</p>
+<p><code>sudo chmod +x ~/.vnc/xstartup</code></p>
+<p>Terakhir, Restart VNC Server dengan :</p>
+<p><code>vncserver</code></p>
+<p>Jika Sukses, maka output yang keluar ialah :</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">New <span class="string">'X'</span> desktop is your_server_name.com:1</span><br><span class="line"></span><br><span class="line">Starting applications specified <span class="keyword">in</span> /home/sammy/.vnc/xstartup</span><br><span class="line">Log file is /home/sammy/.vnc/liniverse.com:1.log</span><br></pre></td></tr></table></figure>
+<p>Nah Saatnya Anda Test Menggunakan VNC Viewer, cara nya masukan url ipserver:1,<br>contoh nya : 10.10.128.10:1</p>
+<p>Jika Ada Pertanyaan , Hubungi <a href="mailto:saya@rifky.tech" target="_blank" rel="noopener">saya@rifky.tech</a></p>
 
         </div>
 
@@ -207,7 +221,7 @@
     <div class="content">
         
 <span class="post-time">
-    Last updated: <time datetime="2018-03-02T04:08:12.723Z" itemprop="dateUpdated">2018-03-02 11:08:12</time>
+    Last updated: <time datetime="2018-03-02T04:37:24.557Z" itemprop="dateUpdated">2018-03-02 11:37:24</time>
 </span><br>
 
 
