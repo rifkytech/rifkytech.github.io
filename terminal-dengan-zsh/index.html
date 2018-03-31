@@ -28,10 +28,12 @@
 <meta property="og:site_name" content="Muhammad Rifky Abimayu">
 <meta property="og:description" content="PendahuluanTerminal atau Shell, merupakan sebuah aplikasi yang tidak asing lagi bagi para pengguna Linux. nah dalam default nyabiasanya terminal linux menggunakan shell bash. yah bisa dibilang agak me">
 <meta property="og:locale" content="en_US">
-<meta property="og:updated_time" content="2018-03-31T13:57:38.541Z">
+<meta property="og:image" content="https://cloud.githubusercontent.com/assets/2618447/6316862/70f58fb6-ba03-11e4-82c9-c083bf9a6574.png">
+<meta property="og:updated_time" content="2018-03-31T14:06:48.216Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Mempercantik Tampilan Terminal dengan Oh My Zsh">
 <meta name="twitter:description" content="PendahuluanTerminal atau Shell, merupakan sebuah aplikasi yang tidak asing lagi bagi para pengguna Linux. nah dalam default nyabiasanya terminal linux menggunakan shell bash. yah bisa dibilang agak me">
+<meta name="twitter:image" content="https://cloud.githubusercontent.com/assets/2618447/6316862/70f58fb6-ba03-11e4-82c9-c083bf9a6574.png">
     
     <link rel="shortcut icon" href="https://www.mexious.net/favicon.ico">
     <link rel="stylesheet" href="//unpkg.com/hexo-theme-material-indigo@latest/css/style.css">
@@ -160,7 +162,7 @@
     <aside class="post-widget">
         <nav class="post-toc-wrap post-toc-shrink" id="post-toc">
             <h4>Topic List</h4>
-            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Pendahuluan"><span class="post-toc-number">1.</span> <span class="post-toc-text">Pendahuluan</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Langkah-Langkah"><span class="post-toc-number">2.</span> <span class="post-toc-text">Langkah - Langkah</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Step-1"><span class="post-toc-number">2.1.</span> <span class="post-toc-text">Step 1</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Step-2"><span class="post-toc-number">2.2.</span> <span class="post-toc-text">Step 2</span></a></li></ol></li></ol>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Pendahuluan"><span class="post-toc-number">1.</span> <span class="post-toc-text">Pendahuluan</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Langkah-Langkah"><span class="post-toc-number">2.</span> <span class="post-toc-text">Langkah - Langkah</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Step-1"><span class="post-toc-number">2.1.</span> <span class="post-toc-text">Step 1</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Step-2"><span class="post-toc-number">2.2.</span> <span class="post-toc-text">Step 2</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Step-3"><span class="post-toc-number">2.3.</span> <span class="post-toc-text">Step  3</span></a></li></ol></li></ol>
         </nav>
     </aside>
 
@@ -195,6 +197,17 @@
 <p>Untuk Arch Linux / Manjaro<br><code>sudo pacman -S zsh</code></p>
 <h3 id="Step-2"><a href="#Step-2" class="headerlink" title="Step 2"></a>Step 2</h3><p>Kedua, Kita Perlu Membuat shell zsh menjadi default shell di terminal kita</p>
 <p><code>chsh -s /bin/zsh</code></p>
+<h3 id="Step-3"><a href="#Step-3" class="headerlink" title="Step  3"></a>Step  3</h3><p>Ketiga, Mari Kita Install OH My ZSH</p>
+<p><code>sh -c “$(wget <a href="https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh" target="_blank" rel="noopener">https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh</a> -O -)”</code></p>
+<p>Default theme Oh My Zsh menggunakan robbyrussell, dapat diganti dengan mengubah file <code>~/.zshrc</code>. Cari baris kode ZSH_THEME dan ganti dengan nama theme yang diinginkan. Lihat nama theme dan screenshot-nya di <a href="https://github.com/robbyrussell/oh-my-zsh/wiki/themes" target="_blank" rel="noopener">Github</a></p>
+<p>Screenshot terminal di bawah ini menggunakan theme Agnoster. Baca  <a href="https://gist.github.com/renshuki/3cf3de6e7f00fa7e744a" target="_blank" rel="noopener">tutorial theme Agnoster</a> agar bisa tampil dengan baik. Dan beberapa theme yang mirip dengan Agnoster dapat dilihat di sini.</p>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="https://cloud.githubusercontent.com/assets/2618447/6316862/70f58fb6-ba03-11e4-82c9-c083bf9a6574.png" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure>
 
         </div>
 
@@ -203,7 +216,7 @@
     <div class="content">
         
 <span class="post-time">
-    Last updated: <time datetime="2018-03-31T13:57:38.541Z" itemprop="dateUpdated">2018-03-31 20:57:38</time>
+    Last updated: <time datetime="2018-03-31T14:06:48.216Z" itemprop="dateUpdated">2018-03-31 21:06:48</time>
 </span><br>
 
 
